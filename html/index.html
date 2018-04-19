@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <div id="board">
+        <div id="shape-generator-box">
+            <h3>Shape Generator</h3>
+            <p style="font-size: 13px; font-weight: 100; font-family: Roboto, arial, sans-serif">Use the controls below to generate shapes</p>
+            <p style="font-size: 15px; font-weight: 700; font-family: Roboto, arial, sans-serif">Select color:</p>
+            <div>
+                <input type="radio" id="orange" name="color" value="orange">
+                <label for="orange" style="color: orange; margin-right: 25px">Orange</label>
+
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="blue" style="color: blue; margin-right: 26px">Blue</label>
+
+                <input type="radio" id="green" name="color" value="green">
+                <label for="green" style="color: green">Green</label>
+            </div>
+            <p style="font-size: 15px; font-weight: 700; font-family: Roboto, arial, sans-serif">Select shape:</p>
+            <div>
+                <input type="radio" id="square" name="shape" value="square">
+                <label for="square" style="margin-right: 27px">Square</label>
+
+                <input type="radio" id="triangle" name="shape" value="triangle">
+                <label for="triangle" style="margin-right: 5px">Triangle</label>
+
+                <input type="radio" id="circle" name="shape" value="circle">
+                <label for="circle">Circle</label>
+            </div>
+            <br>
+            <button id="generate-shape">Generate</button>
+            <button id="clear-screen">Clear Screen</button>
+        </div>
+    </div>
+</body>
+
+</html>

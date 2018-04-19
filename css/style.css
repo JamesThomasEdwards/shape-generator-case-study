@@ -1,0 +1,66 @@
+#board {
+    border: 1px solid black;
+    width: 1024px;
+    height: 768px;
+    overflow: auto;
+}
+#shape-generator-box {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 7%;
+    left: 2%;
+}
+h3 {
+    font-family: Roboto, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+button {
+    background-color: black;
+   
+    color: white;
+    outline: none;
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+    font-family: Roboto, arial, sans-serif;
+}
+button:active {
+    background-color: white;
+    color: black
+}
+button:hover {
+    background-color: white;
+    color: black
+}
+
+/* .square {
+    border: 10px solid blue;
+    width: 70px;
+    height: 70px;
+} */
+
+/* .circle {
+    border: 10px solid blue;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+} */
+
+.triangle {
+    position: relative;
+    width:0;
+    border-bottom:solid 70px blue;
+    border-right:solid 50px transparent;
+    border-left:solid 50px transparent;
+}
+.triangle .empty {
+    position: absolute;
+    top:14px;
+    left:-34px;
+    width:0;
+    border-bottom:solid 49px white;
+    border-right:solid 34px transparent;
+    border-left:solid 34px transparent;
+}

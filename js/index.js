@@ -18,14 +18,14 @@ $(document).ready(() => {
                         }
                         positions[Math.floor($(shape).offset().top)] = this;
                     },
-                    complete: function () {
+                    complete: () => {
                         //after initial animate is complete start new animation
                         //at a slower rate to have the gravity effect;
                         $(shape).animate({
                             top: -1000
                         }, {
-                                duration: 17000,
-                                step: (now, fx) => {
+                                duration: 59000,
+                                step: function (now, fx) {
                                     $(shape).css("top", now);
                                     if (positions != undefined) {
                                         positions[Math.floor($(shape).offset().top)] = this;
@@ -38,6 +38,12 @@ $(document).ready(() => {
                 })
         }
         console.log(positions);
+        //clears board 
+        let removeShape = (shape) => {
+            $("#clear-screen").click((e) => {
+                $(shape).remove()
+            })
+        }
         //sets random starting positions for each shape across the page;
         let randomPosition = () => {
             let currentNum;
@@ -73,42 +79,50 @@ $(document).ready(() => {
         //check which radio was checked, this isn't DRY
         //decided not to use radio form becuase that could
         //prevent you from using certain added functionality down the road; 
-        if ($('input[value=blue]:checked').val() && $('input[value=square]:checked').val()) {
+        if ($("input[value=blue]:checked").val() && $("input[value=square]:checked").val()) {
             $("#board").append(squareBlue);
             shapeAnimate(squareBlue);
-
+            removeShape(squareBlue)
         }
-        if ($('input[value=orange]:checked').val() && $('input[value=square]:checked').val()) {
+        if ($("input[value=orange]:checked").val() && $("input[value=square]:checked").val()) {
             $("#board").append(squareOrange);
             shapeAnimate(squareOrange);
+            removeShape(squareOrange);
         }
-        if ($('input[value=green]:checked').val() && $('input[value=square]:checked').val()) {
+        if ($("input[value=green]:checked").val() && $("input[value=square]:checked").val()) {
             $("#board").append(squareGreen);
             shapeAnimate(squareGreen);
+            removeShape(squareGreen);
         }
-        if ($('input[value=blue]:checked').val() && $('input[value=circle]:checked').val()) {
+        if ($("input[value=blue]:checked").val() && $("input[value=circle]:checked").val()) {
             $("#board").append(circleBlue);
             shapeAnimate(circleBlue);
+            removeShape(circleBlue);
         }
-        if ($('input[value=orange]:checked').val() && $('input[value=circle]:checked').val()) {
+        if ($("input[value=orange]:checked").val() && $("input[value=circle]:checked").val()) {
             $("#board").append(circleOrange);
             shapeAnimate(circleOrange);
+            removeShape(circleOrange);
         }
-        if ($('input[value=green]:checked').val() && $('input[value=circle]:checked').val()) {
+        if ($("input[value=green]:checked").val() && $("input[value=circle]:checked").val()) {
             $("#board").append(circleGreen);
             shapeAnimate(circleGreen);
+            removeShape(circleGreen);
         }
-        if ($('input[value=blue]:checked').val() && $('input[value=triangle]:checked').val()) {
+        if ($("input[value=blue]:checked").val() && $("input[value=triangle]:checked").val()) {
             $("#board").append(triangleBlue);
             shapeAnimate(triangleBlue);
+            removeShape(triangleBlue);
         }
-        if ($('input[value=orange]:checked').val() && $('input[value=triangle]:checked').val()) {
+        if ($("input[value=orange]:checked").val() && $("input[value=triangle]:checked").val()) {
             $("#board").append(triangleOrange);
             shapeAnimate(triangleOrange);
+            removeShape(triangleOrange);
         }
-        if ($('input[value=green]:checked').val() && $('input[value=triangle]:checked').val()) {
+        if ($("input[value=green]:checked").val() && $("input[value=triangle]:checked").val()) {
             $("#board").append(triangleGreen);
             shapeAnimate(triangleGreen);
+            removeShape(triangleGreen);
         }
 
     })

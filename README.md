@@ -21,15 +21,15 @@ I could have easily used a radio form but with some of the new ES6-7 features, t
 
 ### Collision of Shapes
 To get each shape's coordinates, I used jQuery's offset method inside the animate method, and nested animate method. I put an object containing each move, the top coordinates (rounded) as the property and the shape that was moving as the value.
-```{top coordinates: shape}```
+```{top coordinates(rounded): shape}```
 
-This was so I could see the shapes every move. I wasn't able to finish this due to lack of time, but that's the path I started with. I'm sure there's a better way.
+This was so I could see the shapes every move. I wasn't able to finish this due to lack of time, but that's the path I started with. I'm sure there's a better way. I'd be interested in hearing your approach.
 
 ### Animation
 jQuery's animate is great! It has that smooth animation, similar to the example in the GIF. This is why I decided to use it. I found there was a complete method in animate, where I couuld re animate at a certain point on the page and have the shape move slower to give it that scrolling gravity effect. When I attemped to use Classes, I was able to get a similar effect, but it wasn't as smooth. I didn't have too much time to play around with Classes to really see, so this was my initial thought.
 
 # Conclusion
-I really enjoyed doing this! As I mentioned, I didn't have a lot of time. I had to devote my time to my current position. This isn't my best work, but with more time I'd be able to figure out the problems
+I really enjoyed doing this! As I mentioned, I didn't have a lot of time. I had to devote my time to my current position. This isn't my best work, but with more time I'd be able to figure out the problems and refactor/ clean up my code
 
 Doing this had sparked my curiosity on collision! I also want to go back and explore using Classes for the shapes; I had a project of this veriety where I used Classes.
 

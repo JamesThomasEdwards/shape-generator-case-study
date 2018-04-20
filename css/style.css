@@ -1,5 +1,4 @@
 #board {
-    border: 1px solid black;
     width: 1024px;
     height: 768px;
     overflow: auto;
@@ -34,19 +33,6 @@ button:hover {
     background-color: white;
     color: black
 }
-
-/* .square {
-    border: 10px solid blue;
-    width: 70px;
-    height: 70px;
-} */
-
-/* .circle {
-    border: 10px solid blue;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-} */
 
 .triangle {
     position: relative;

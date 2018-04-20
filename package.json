@@ -1,0 +1,22 @@
+{
+  "name": "shape-generator-case-study",
+  "version": "1.0.0",
+  "description": "shape-generator-case-study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesThomasEdwards/shape-generator-case-study.git"
+  },
+  "author": "James Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesThomasEdwards/shape-generator-case-study/issues"
+  },
+  "homepage": "https://github.com/JamesThomasEdwards/shape-generator-case-study#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
+}

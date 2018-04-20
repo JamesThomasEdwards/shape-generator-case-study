@@ -1,10 +1,10 @@
 ### Shape Generator Case Study
 
 The case study was to create a shape generator based off this GIF
-![](http://gph.is/1bn5EyK)
+(http://gph.is/1bn5EyK)
 
 And it should look similar to this
-![](https://drive.google.com/open?id=17WBulMzKOjH10y1H8v_sSuJASAh9JSl2)
+(https://drive.google.com/open?id=17WBulMzKOjH10y1H8v_sSuJASAh9JSl2)
 
 There are no frameworks allowed; however, this use of jQuery and SASS/SCSS is available
 
